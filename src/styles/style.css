@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #F6D8D8 0%, rgba(249, 233, 219, 0.00) 100%);
+    background-size: cover;
+}
+
+/* HEADER PART */
+
+header {
+    background: #E6C3C3;
+}
+
+.headerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+.headerContainer h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.headerContainer input[type="text"] {
+    padding: 10px 20px;
+    min-width: 5%;
+    border-radius: 10px;
+    border: 0;
+
+}
+
+.rangePart {
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rangePart span {
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+.sortPart button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+    background: #890303;
+    color: #eee;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.sortPart button:hover {
+    background: #eee;
+    color: #890303;
+}
+
+/* MAIN PART */
+
+.mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.imagePart img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.infoPart {
+    display: flex;
+    padding: 12px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.infoPart .recipe {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 250px){
+    .headerContainer input[type="text"] {
+        width: 80%;
+    }
+}
