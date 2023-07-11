@@ -7,7 +7,6 @@ function HomePage() {
     const [searchValue, setSearchValue] = useState("");
     const [rangeValue, setRangeValue] = useState("");
     const [sortMethod, setSortMethod] = useState(true);
-    // const [textButton, setTextButton] = useState("");
 
     const fetchMeals = () => {
         axios
