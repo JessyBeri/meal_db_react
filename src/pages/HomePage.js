@@ -5,7 +5,7 @@ import axios from "axios";
 function HomePage() {
     const [meals, setMeals] = useState([]);
     const [searchValue, setSearchValue] = useState("");
-    const [rangeValue, setRangeValue] = useState(100);
+    const [rangeValue, setRangeValue] = useState(50);
     const [sortMethod, setSortMethod] = useState(true);
 
     const fetchMeals = () => {
